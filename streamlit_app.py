@@ -6,8 +6,6 @@ from sklearn.impute import KNNImputer
 from sklearn.preprocessing import LabelEncoder
 import streamlit as st
 import pandas as pd
-import numpy as np
-from pathlib import Path
 import io
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
@@ -596,3 +594,4 @@ elif page == "Conclusion":
         This indirectly suggests that exercise does not necessarily improve people's sleep quality, even if people feel tired after doing exercise.
         """)
     st.image("sleep2.jpg", use_column_width=True)
+    
