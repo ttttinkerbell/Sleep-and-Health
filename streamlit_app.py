@@ -333,8 +333,8 @@ elif page == "IDA":
 elif page == "EDA":
     st.title("EDA 📈")
     st.write("Now, let's do some exploratory data analysis.")
-    DATA_URL_1 = ('/workspaces/Sleep-and-Health/dataset1_with_missing_values.csv')
-    DATA_URL_2 = ('/workspaces/Sleep-and-Health/dataset2_with_missing_values.csv')
+    DATA_URL_1 = ('dataset1_with_missing_values.csv')
+    DATA_URL_2 = ('dataset2_with_missing_values.csv')
     df1 = pd.read_csv(DATA_URL_1)
     df = pd.read_csv(DATA_URL_2)
     df2 = pd.read_csv(DATA_URL_2)
