@@ -22,7 +22,7 @@ if page == "Homepage":
             
         """
     )
-    st.image("/workspaces/Sleep-and-Health/sleep.jpg", use_column_width=True)
+    st.image("sleep.jpg", use_column_width=True)
 
 elif page == "Introduction":
     st.title("Introduction 😄")
@@ -47,12 +47,12 @@ elif page == "Introduction":
             Hope this is helpful to medical practitioners. Now, let's get started.
         """
     )
-    st.image("/workspaces/Sleep-and-Health/sleep1.jpg", use_column_width=True)
+    st.image("sleep1.jpg", use_column_width=True)
 
 elif page == "IDA":
     st.title("IDA 📊")
-    DATA_URL_1 = ('/workspaces/Sleep-and-Health/dataset1_with_missing_values.csv')
-    DATA_URL_2 = ('/workspaces/Sleep-and-Health/dataset2_with_missing_values.csv')
+    DATA_URL_1 = ('Sleep-and-Health/dataset1_with_missing_values.csv')
+    DATA_URL_2 = ('Sleep-and-Health/dataset2_with_missing_values.csv')
     df1 = pd.read_csv(DATA_URL_1)
     df = pd.read_csv(DATA_URL_2)
     df2 = pd.read_csv(DATA_URL_2)
@@ -595,4 +595,4 @@ elif page == "Conclusion":
         The factor that has the least impact on our sleep is calorie burned daily.
         This indirectly suggests that exercise does not necessarily improve people's sleep quality, even if people feel tired after doing exercise.
         """)
-    st.image("/workspaces/Sleep-and-Health/sleep2.jpg", use_column_width=True)
+    st.image("sleep2.jpg", use_column_width=True)
